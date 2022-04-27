@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../knockout-3.5.1.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form">
+      <div>
+        <label for="fname">First Name: </label><input type="text" data-bind="value:firstName" id="fname" />
+      </div>
+      <div>
+        <label for="lname">Last Name: </label><input type="text" data-bind="value:lastName" id="lname" />
+      </div>
+      <div>
+        <label>Full Name:</label><input data-bind="value:fullName" class="fullname" readonly>
+      </div>
+      <div>
+        <label for="cAddress">Current Address: </label><input id="cAddress" data-bind="value:currentAddress">
+      </div>
+      <div>
+        <label for="checkIt" id="check">Is your Permanent Address same as Current Address</label>
+        <input type="checkbox" class="checkIt" id="checkIt" checked />
+      </div>
+      <div>
+        <label>Permanent Address:</label><input data-bind="value:permAddress" class="pAddress" id="pAddress" disabled>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
