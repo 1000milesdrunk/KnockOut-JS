@@ -1,5 +1,5 @@
 let self, current;
-function ViewModal(checkValue) {
+function ViewModal() {
   self = this;
   this.firstName = ko.observable("");
   this.lastName = ko.observable("");
@@ -71,3 +71,21 @@ checkBox.addEventListener("change", function (event) {
     document.getElementById("pAddress").toggleAttribute("disabled");
   }
 });
+
+// document.querySelector("button").addEventListener("click", function () {
+//   let userDetails = document.querySelector("input").value;
+//   console.log(userDetails);
+// });
+
+function display() {
+  let userDetails = {};
+  userDetails.firstName = document.getElementById("fname").value;
+  userDetails.lastName = document.getElementById("lname").value;
+  userDetails.fullName = document.getElementById("fullname").value;
+  userDetails.currentAddress = document.getElementById("cAddress").value;
+  userDetails.permanentAddress = document.getElementById("pAddress").value;
+  console.log(userDetails);
+  const details1 = [];
+  details1.push(JSON.stringify(userDetails));
+  console.log(details1);
+}
