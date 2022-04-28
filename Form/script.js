@@ -1,6 +1,7 @@
 let self, current;
 function ViewModal() {
   self = this;
+  console.log(this);
   this.firstName = ko.observable("");
   this.lastName = ko.observable("");
   this.fullName = ko.computed(function () {
@@ -38,4 +39,6 @@ function display() {
   console.log(userDetails);
   details1.push(JSON.stringify(userDetails));
   console.log(details1);
+
+  console.log(self);
 }
