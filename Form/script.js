@@ -29,10 +29,16 @@ checkBox.addEventListener("change", function () {
   }
 });
 
-function getValue() {
-  var values = {};
-  $.each($("#formId").serializeArray(), function (i, field) {
-    values[field.name] = field.value;
-  });
+document.getElementById("btn").addEventListener("click", function (e) {
+  let arr = $("#formId").serializeArray();
+  console.log(arr);
+  console.log($);
+  console.log(jQuery);
+  let values = {};
+  // jQuery.each(arr, function (i, userDetails) {
+  //   console.log(userDetails);
+  //   values[userDetails.name] = userDetails.value;
+  // });
+  console.log($.each);
   console.log(values);
-}
+});
