@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-    background: linear-gradient(135deg,
-            rgba(14, 206, 14, 0.582),
-            rgb(6, 167, 68));
+    /* background: linear-gradient(135deg, */
+    /* rgba(14, 206, 14, 0.582), */
+    /* rgb(6, 167, 68)); */
     width: 80%;
     border: 5px solid black;
 }
@@ -21,6 +21,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+fieldset {}
 
 .form label {
     display: inline-block;
