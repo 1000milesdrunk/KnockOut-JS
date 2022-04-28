@@ -9,44 +9,49 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../bs5/css/bootstrap.css">
   <script src="../knockout-3.5.1.js"></script>
+  <script defer src="../jquery-3.6.0.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="../bs5/js/bootstrap.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <form class="form">
+    <form class="form" id="formId">
       <fieldset class="row">
         <legend>User Details</legend>
         <div class="col-sm-6">
           <label for="fname">First Name: </label>
-          <input type="text" data-bind="value:firstName" id="fname" />
+          <input type="text" name='firstName' data-bind="value:firstName" id="fname" />
         </div>
         <div class="col-sm-6">
-          <label for="lname">Last Name: </label><input type="text" data-bind="value:lastName" id="lname" />
+          <label for="lname">Last Name: </label>
+          <input type="text" name="lastName" data-bind="value:lastName" id="lname" />
         </div>
         <div class="col-sm-6">
-          <label>Full Name:</label><input data-bind="value:fullName" class="fullname" readonly id="fullname">
+          <label>Full Name:</label>
+          <input name="fullName" data-bind="value:fullName" class="fullname" readonly id="fullname">
         </div>
       </fieldset>
       <fieldset class="row">
         <legend>Address</legend>
         <div class="col-md-6">
-          <label for="cAddress">Current Address: </label><input id="cAddress" data-bind="value:currentAddress">
+          <label for="cAddress">Current Address: </label>
+          <input id="cAddress" name="currentAddress" data-bind="value:currentAddress">
         </div>
         <div class="col-md-6">
           <label for="checkIt" id="check">Is your Permanent Address same as Current Address</label>
-          <input type="checkbox" class="checkIt" id="checkIt" checked />
+          <input type="checkbox" name="checkAddress" class="checkIt" id="checkIt" checked />
         </div>
         <div class="col-md-6">
-          <label>Permanent Address:</label><input data-bind="value:permAddress" class="pAddress" id="pAddress" disabled>
+          <label>Permanent Address:</label>
+          <input name="permanentAddress" data-bind="value:permAddress" class="pAddress" id="pAddress" disabled>
         </div>
       </fieldset>
       <div class="btn">
-        <input type="button" onclick="display()" value="Submit" id="btn">
+        <input type="button" onclick="getValue()" value="Submit" id="btn">
       </div>
     </form>
   </div>
-  <script src="script.js"></script>
-  <script src="../bs5/js/bootstrap.js"></script>
 </body>
 
 </html>
