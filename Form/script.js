@@ -30,15 +30,18 @@ checkBox.addEventListener("change", function () {
 });
 
 document.getElementById("btn").addEventListener("click", function (e) {
-  let arr = $("#formId").serializeArray();
+  //serialize array get the name and value from the given id
+  // let arr = $("#formId").serializeArray();
+  // let arr = $(":input").serializeArray();
+  // let arr = $("#userSet").serializeArray();
   console.log(arr);
-  console.log($);
-  console.log(jQuery);
-  let values = {};
+  // console.log($);
+  // console.log(jQuery);
+  // let values = {};
   // jQuery.each(arr, function (i, userDetails) {
   //   console.log(userDetails);
   //   values[userDetails.name] = userDetails.value;
   // });
-  console.log($.each);
-  console.log(values);
+  // console.log($.each);
+  // console.log(values);
 });

@@ -17,13 +17,14 @@
 <body>
   <div class="container">
     <form class="form" id="formId">
-      <fieldset class="row">
+      <fieldset class="row" id="userSet">
         <legend>User Details</legend>
-        <div class="col-sm-6">
-          <label for="fname">First Name: </label>
+        <div class="col-sm-6" id="fnamediv">
+          <label for="fname" id="fnameid">First Name:
+          </label>
           <input type="text" name='firstName' data-bind="value:firstName" id="fname" />
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" class="fnamediv">
           <label for="lname">Last Name: </label>
           <input type="text" name="lastName" data-bind="value:lastName" id="lname" />
         </div>
