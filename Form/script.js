@@ -28,20 +28,7 @@ checkBox.addEventListener("change", function () {
     document.getElementById("pAddress").toggleAttribute("disabled");
   }
 });
-// const details1 = [];
-// function display() {
-//   let userDetails = {};
-//   userDetails.firstName = document.getElementById("fname").value;
-//   userDetails.lastName = document.getElementById("lname").value;
-//   userDetails.fullName = document.getElementById("fullname").value;
-//   userDetails.currentAddress = document.getElementById("cAddress").value;
-//   userDetails.permanentAddress = document.getElementById("pAddress").value;
-//   console.log(userDetails);
-//   details1.push(JSON.stringify(userDetails));
-//   console.log(details1);
 
-//   console.log(self);
-// }
 function getValue() {
   var values = {};
   $.each($("#formId").serializeArray(), function (i, field) {
