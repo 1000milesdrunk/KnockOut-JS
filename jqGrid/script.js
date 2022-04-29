@@ -7,10 +7,15 @@ $(function () {
       {
         name: "firstName",
         label: "First Name",
+        width: "180px",
+        align: "left",
+        sorttype: "text",
       },
       {
         name: "lastName",
         label: "Last Name",
+        width: "150px",
+        align: "left",
       },
     ],
     data: [
@@ -22,6 +27,7 @@ $(function () {
     ],
 
     rownumbers: true,
+
     // guiStyle: "bootstrap",
     caption: "User Details",
   });

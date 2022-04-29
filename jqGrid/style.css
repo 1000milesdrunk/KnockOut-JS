@@ -1,12 +1,9 @@
-/* .ui-jqgrid-view {
-    background-color: aqua;
-}
-
-.ui-jqgrid-bootstrap-corner-bottom {
+h1 {
     text-align: center;
-    background-color: blue;
+    color: rgb(29, 180, 226);
 }
 
-tbody {
-    background-color: antiquewhite;
-} */
+div {
+    margin: 0 auto;
+    /* width: fit-content; */
+}
