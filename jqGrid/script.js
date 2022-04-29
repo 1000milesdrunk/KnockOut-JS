@@ -13,12 +13,6 @@ $(function () {
         label: "Last Name",
       },
     ],
-    // rowModel: [
-    //   {
-    //     name: "Id",
-    //     label: "Id Name",
-    //   },
-    // ],
     data: [
       { id: 10, firstName: "Angela", lastName: "Merkel" },
       { id: 20, firstName: "Vladimir", lastName: "Putin" },
