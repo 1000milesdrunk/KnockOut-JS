@@ -3,7 +3,9 @@ h1 {
     color: rgb(29, 180, 226);
 }
 
-div {
-    margin: 0 auto;
-    /* width: fit-content; */
+#tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
