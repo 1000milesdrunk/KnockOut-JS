@@ -1,7 +1,7 @@
 let self, current;
 function ViewModal() {
   self = this;
-  console.log(this);
+  // console.log(this);
   this.firstName = ko.observable("");
   this.lastName = ko.observable("");
   this.fullName = ko.computed(function () {
@@ -36,13 +36,14 @@ document.getElementById("btn").addEventListener("click", function (e) {
   // let arr = $(":input").serializeArray();
   // let arr = $("#userSet").serializeArray();
   // console.log(arr);
+  //both $ and jQuery
   // console.log($);
   // console.log(jQuery);
+  //i is the index and userDetails is the variable name to store the iterated value
   let values = {};
   jQuery.each(arr, function (i, userDetails) {
     // console.log(userDetails);
     values[userDetails.name] = userDetails.value;
   });
-  // console.log($.each);
   console.log(values);
 });
