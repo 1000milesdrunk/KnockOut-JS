@@ -23,13 +23,21 @@ checkBox.addEventListener("change", function () {
   if (!checkBox.checked) {
     document.querySelector(".pAddress").value = "";
     document.getElementById("pAddress").toggleAttribute("disabled");
+    // document.getElementById("pAddress").toggleAttribute("required");
+
+    // document.getElementById("pAddress").toggleAttribute("readonly");
   } else {
     document.querySelector(".pAddress").value = model1.currentAddress();
     document.getElementById("pAddress").toggleAttribute("disabled");
+    // document.getElementById("pAddress").toggleAttribute("readonly");
   }
 });
 
 document.getElementById("btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  // if (!checkBox.checked) {
+  //   document.getElementById("pAddress").toggleAttribute("required");
+  // }
   //serialize array get the name and value from the given id
   let arr = $("#formId").serializeArray();
   //works in form,fieldset,input not on div and label

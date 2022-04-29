@@ -38,8 +38,9 @@
         <div class="col-md-6">
           <label for="cAddress">Current Address: </label>
           <input id="cAddress" name="currentAddress" data-bind="value:currentAddress">
+          <!-- <textarea name="currentAddress" id="cAddress" cols="40" rows="3" data-bind="value:currentAddress"></textarea> -->
         </div>
-        <div class="col-md-6">
+        <div class=" col-md-6">
           <label for="checkIt" id="check">Is your Permanent Address same as Current Address</label>
           <input type="checkbox" name="permanentAddress" value="Same as Current Address" class="checkIt" id="checkIt"
             checked />
@@ -47,6 +48,8 @@
         <div class="col-md-6">
           <label>Permanent Address:</label>
           <input name="permanentAddress" data-bind="value:permAddress" class="pAddress" id="pAddress" disabled>
+          <!-- <input name="permanentAddress" data-bind="value:permAddress" class="pAddress" id="pAddress" readonly> -->
+          <!-- <textarea name="permanentAddress" id="pAddress" cols="30" rows="4" data-bind="text:permAddress"></textarea> -->
         </div>
       </fieldset>
       <div class="btn">
